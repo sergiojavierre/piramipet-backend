@@ -1,4 +1,4 @@
-package com.cpifppiramide.piramipet.piramipet;
+package com.cpifppiramide.piramipet;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

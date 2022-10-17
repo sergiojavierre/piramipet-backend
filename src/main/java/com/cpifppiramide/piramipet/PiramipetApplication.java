@@ -1,4 +1,4 @@
-package com.cpifppiramide.piramipet.piramipet;
+package com.cpifppiramide.piramipet;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
