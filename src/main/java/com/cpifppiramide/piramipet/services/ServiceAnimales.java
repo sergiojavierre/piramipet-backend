@@ -8,5 +8,6 @@ public interface ServiceAnimales {
 
     public List<Animal> findAll();
     public void save(Animal animal);
+    public List<Animal> delete(String nombreAnimal);
 
 }

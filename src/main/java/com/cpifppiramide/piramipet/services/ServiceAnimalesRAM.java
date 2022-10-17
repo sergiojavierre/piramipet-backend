@@ -22,4 +22,15 @@ public class ServiceAnimalesRAM implements ServiceAnimales{
     public void save(Animal animal) {
         this.animales.add(animal);
     }
+
+    @Override
+    public List<Animal> delete(String nombreAnimal) {
+        for (Animal cadaAnimal: this.animales) {
+            if (cadaAnimal.getNombre().toLowerCase().equals(nombreAnimal.toLowerCase())) {
+                this.animales.remove(cadaAnimal);
+                return this.animales;
+            }
+        }
+        return animales;
+    }
 }
