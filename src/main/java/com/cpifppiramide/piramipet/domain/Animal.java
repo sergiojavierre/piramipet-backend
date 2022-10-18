@@ -6,6 +6,7 @@ public class Animal {
 
     private final String DNI, chip, nombre, genero, color;
     private final Date fechaNacimiento;
+    private Persona dueno;
 
     public Animal(String DNI, String chip, String nombre, String genero, String color, Date fechaNacimiento) {
         this.DNI = DNI;
@@ -14,6 +15,7 @@ public class Animal {
         this.genero = genero;
         this.color = color;
         this.fechaNacimiento = fechaNacimiento;
+        this.dueno = dueno;
     }
 
     public String getDNI() {
@@ -38,5 +40,22 @@ public class Animal {
 
     public Date getFechaNacimiento() {
         return fechaNacimiento;
+    }
+
+    public void setDueno(Persona dueno) {
+        this.dueno = dueno;
+    }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "DNI='" + DNI + '\'' +
+                ", chip='" + chip + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", genero='" + genero + '\'' +
+                ", color='" + color + '\'' +
+                ", fechaNacimiento=" + fechaNacimiento +
+                ", dueno=" + dueno +
+                '}';
     }
 }
