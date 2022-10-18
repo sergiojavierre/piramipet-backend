@@ -5,9 +5,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-public interface ServiceAnimales {
+public interface ServiceAnimales <T>{
 
-    public List<Animal> findAll();
-    public Animal save(Animal animal);
-    public List<Animal> findByFilter(String color,String genero);
+    public List<T> findAll();
+    public T save(Animal animal);
+    public List<T> findByFilter(String color,String genero);
 }

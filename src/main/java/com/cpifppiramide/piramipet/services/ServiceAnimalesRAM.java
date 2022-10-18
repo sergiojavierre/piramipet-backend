@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class ServiceAnimalesRAM implements ServiceAnimales{
+public class ServiceAnimalesRAM implements ServiceAnimales<Animal>{
 
     private final List<Animal> animales;
 
@@ -26,9 +26,7 @@ public class ServiceAnimalesRAM implements ServiceAnimales{
         return animal;
     }
     @Override
-    public List<Animal> findByFilter(
-            @RequestParam(required = false, name = "color") String color,
-            @RequestParam(required = false, name = "genero") String genero) {
+    public List<Animal> findByFilter(String color,String genero) {
 
         List<Animal> animalesFiltrados = this.animales.stream().filter(animal -> {
             if(color != null){

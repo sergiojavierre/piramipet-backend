@@ -1,5 +1,9 @@
 package com.cpifppiramide.piramipet.domain;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class Animal {
@@ -38,5 +42,17 @@ public class Animal {
 
     public Date getFechaNacimiento() {
         return fechaNacimiento;
+    }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "DNI='" + DNI + '\'' +
+                ", chip='" + chip + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", genero='" + genero + '\'' +
+                ", color='" + color + '\'' +
+                ", fechaNacimiento=" + fechaNacimiento +
+                '}';
     }
 }
