@@ -26,4 +26,13 @@ public class ServiceAnimalesTest {
         assertEquals(1,animalesAlmacenados.size());
     }
 
+    @Test
+    public void delete() {
+        Animal animal = new Animal("2", "abcde", "Alba", "Hembra", "Marrón", new Date());
+        service.save(animal);
+        service.delete("Alba");
+        List<Animal> animalesAlmacenados = service.findAll();
+        assertEquals(0, animalesAlmacenados.size());
+    }
+
 }
