@@ -4,10 +4,10 @@ import java.util.Date;
 
 public class Animal {
 
-    private final String DNI, chip, nombre, genero, color;
-    private final Date fechaNacimiento;
+    private final String DNI, chip, nombre, genero, color, fechaNacimiento;
+    private Persona persona;
 
-    public Animal(String DNI, String chip, String nombre, String genero, String color, Date fechaNacimiento) {
+    public Animal(String DNI, String chip, String nombre, String genero, String color, String fechaNacimiento) {
         this.DNI = DNI;
         this.chip = chip;
         this.nombre = nombre;
@@ -36,7 +36,15 @@ public class Animal {
         return color;
     }
 
-    public Date getFechaNacimiento() {
+    public String getFechaNacimiento() {
         return fechaNacimiento;
+    }
+
+    public Persona getPersona() {
+        return persona;
+    }
+
+    public void setPersona(Persona persona) {
+        this.persona = persona;
     }
 }

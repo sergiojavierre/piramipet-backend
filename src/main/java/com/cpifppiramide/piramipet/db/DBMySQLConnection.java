@@ -7,10 +7,10 @@ import java.sql.SQLException;
 public class DBMySQLConnection {
 
     private final static String
-            host = "bd-sergio.cbcah7kmtstt.us-east-1.rds.amazonaws.com",
+            host = "localhost",
             db = "piramipet",
-            user = "admin",
-            passsword = "SaltoRoldan";
+            user = "root",
+            passsword = "cpifp";
 
     private static Connection connection;
 
